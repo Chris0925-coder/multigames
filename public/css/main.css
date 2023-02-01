@@ -116,12 +116,12 @@ body {
 .slider img {
 /*	box-sizing: border-box;*/
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	position: relative;
 	background-size: cover;
 	margin: 0 auto;
 	padding: 0;
-	object-fit: fill;
+	object-fit: cover;
 	transition: transform 0.3s ease-in-out;
 	z-index: -1;
 }
@@ -186,4 +186,14 @@ body {
 	width: 20%;
 	height: fit-content;
 	margin: 0;
+}
+
+
+
+
+/*paginadownload*/
+.pagina2 {
+	display: inline-flex;
+	position: relative;
+	flex-direction: row;
 }

@@ -6,17 +6,14 @@
 body {
 /*	background-color: yellow;*/
 	font-style: san-serif;
-	width: auto;
-	height: 100vh;
+/*	width: auto;*/
+/*	height: 100vh;*/
 }
-
+/*
 .container-fluid {
 	width: 100%;
 	height: auto;
-	margin: 0;
-	padding: 0;
-
-}
+}*/
 
 .primero {
 	background-color: dimgray;
@@ -196,4 +193,24 @@ body {
 	display: inline-flex;
 	position: relative;
 	flex-direction: row;
+}
+
+
+.youvideos {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	align-content: center;
+	justify-content: space-between;
+	justify-items: center;
+	vertical-align: middle;
+}
+
+.you {
+	margin: 0 auto;
 }

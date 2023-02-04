@@ -26,7 +26,7 @@ function showSlides() {
     }
     img[slideIndex-1].style.display = "block";
     // img[slideIndex-1].style.transition = "transform 0.6s ease-in-out";
-    setTimeout(showSlides,6000);
+    setTimeout(showSlides,8000);
     // console.log(slideIndex);
 };
 

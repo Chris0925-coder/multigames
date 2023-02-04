@@ -18,6 +18,11 @@ body {
 .primero {
 	background-color: dimgray;
 	color: palegoldenrod;
+/*	background-image: url('public/img/logomultigames.png');*/
+	width: 100%;
+
+/*	height: 100px;*/
+/*	margin: 0;*/
 }
 
 .nav li a{
@@ -193,6 +198,8 @@ body {
 	display: inline-flex;
 	position: relative;
 	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: column;
 }
 
 

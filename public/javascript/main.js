@@ -27,19 +27,21 @@ function showSlides() {
     }
     img[slideIndex-1].style.display = "block";
     // img[slideIndex-1].style.transition = "transform 0.6s ease-in-out";
-    const st = setTimeout(showSlides,8000);
-    next.addEventListener('click', () => {
-    	clearTimeout(st);
-    })
+    //     next.addEventListener('click', () => {
+    	
+    // })
     // if (img[-1]) {
     // 	img.length = 0
     // }
     // console.log(slideIndex);
 };
 
-showSlides();
+
+
+let sTime = setInterval(showSlides, 8000);
 
 prev.addEventListener('click', () => {
+	clearInterval(sTime);
 	// slideIndex--;
 	if (true) {
 		slideIndex--;
@@ -55,6 +57,7 @@ prev.addEventListener('click', () => {
 });
 
 next.addEventListener('click', () => {
+	clearInterval(sTime);
 	if (true) {
 		slideIndex++;
 		// img[slideIndex-1];
@@ -68,4 +71,21 @@ next.addEventListener('click', () => {
     	// img.length = 0
     }
 	img[slideIndex-1].style.display = "block";
+});
+
+
+let contenido = document.querySelector('.contenidos');
+let plus = document.querySelector('.plusM');
+let close = document.querySelector('.closeA');
+
+
+
+
+plus.addEventListener('click', () => {
+	contenido.style.display = 'block';
+});
+
+
+close.addEventListener('click', () => {
+	contenido.style.display = 'none';
 });

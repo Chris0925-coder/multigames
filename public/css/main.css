@@ -242,4 +242,79 @@ body {
 	margin: 0 auto;
 }
 
+.clearA {
+	display: block;
+}
+.closeA {
+	display: flex;
+	position: relative;
+/*	width: 100%;*/
+	float: right;
+	margin: 40px;
+	padding: 3px;
+	border: solid 1px;
+}
+
+.closeA:hover {
+	cursor: pointer;
+	background-color: rgba(250, 250, 250, 0.4);
+}
+
+.contenidos {
+	display: none;
+	position: fixed;
+	flex-direction: column;
+	flex-wrap: wrap;
+/*	flex-flow: column;*/
+	background-color: rgba(0, 0, 0, 0.4);
+/*	transform: scale(1);*/
+	z-index: 2000;
+	width: auto;
+	height: 80lvh;
+	color: white;
+	top: 30px;
+/*	left: 0;*/
+	margin: 10px auto;
+	text-align: center;
+	text-justify: justify;
+	align-content: center;
+	justify-items: center;
+	justify-content: center;
+	
+}
+
+
+
+.contenidos .cont-parafo {
+	/*display: block;
+	position: relative;
+*/	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	align-content: center;
+	object-position: center;
+	overflow: hidden;
+}
+
+.cont-parafo {
+/*	display: block;*/
+/*	position: relative;*/
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: #303030;
+	margin: 30px;
+	padding: 20px;
+	width: auto;
+	height: auto;
+	object-position: center;
+	align-self: center;
+	justify-self: center;
+	overflow: auto;
+	
+}
+
+.cont-parafo p {
+	font-size: 0.7rem;
+	overflow: auto;
+}
 

@@ -43,14 +43,19 @@ let sTime = setInterval(showSlides, 8000);
 prev.addEventListener('click', () => {
 	clearInterval(sTime);
 	// slideIndex--;
-	if (true) {
-		slideIndex--;
-		// img[slideIndex-1];
+	// if (true) {
+				// img[slideIndex-1];
 		for (i = 0; i < img.length; i++) {
 		img[i].style.display = "none";
 		}
-	} else if (slideIndex < 1) {
-		slideIndex = img.length -1;
+	// } 
+
+	slideIndex--;
+
+
+
+	if (slideIndex <= 0) {
+		slideIndex = 5;
 	}
 	img[slideIndex-1].style.display = "block";
 

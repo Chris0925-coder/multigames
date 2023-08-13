@@ -128,10 +128,13 @@ body {
 	color: palegoldenrod;
 }
 
-.active {
-	background-color: rgba(250, 250, 250, .1);
+
+.active .nav-link {
+	background-color: rgba(250, 250, 250, .6);
+	color: black;
+	padding: 5px;
 /*	border-style: none;*/
-/*	border-radius: 2px;*/
+	border-radius: 2px;
 }
 
 
@@ -283,7 +286,7 @@ body {
 	flex-direction: column;
 	flex-wrap: wrap;
 /*	flex-flow: column;*/
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 1);
 /*	transform: scale(1);*/
 	z-index: 2000;
 	width: 80%;
@@ -298,6 +301,8 @@ body {
 	align-content: center;
 	justify-items: center;
 	justify-content: center;
+	text-align: justify;
+	z-index: 5000;
 }
 
 /*body*/
@@ -581,7 +586,6 @@ body {
 		margin-top: 10px;
 	}
 }
-
 
 
 

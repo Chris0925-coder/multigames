@@ -75,8 +75,6 @@ function showSlides() {
 		}
 };
 
-
-
 let sTime = setInterval(showSlides, 8000);
 
 prev.addEventListener('click', () => {
@@ -141,7 +139,9 @@ close.addEventListener('click', () => {
 
 console.log(img1);
 function slider1(a , b, c, d ,f , g, h){
+
 	a.addEventListener('click', () => {
+		clearInterval(sTime);
 		b.style.display = 'block';
 		c.style.display = 'none';
 		d.style.display = 'none';

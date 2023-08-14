@@ -198,27 +198,24 @@ body {
 }
 
 .parr {
-	color: black;
-	display: flex;
-	scale: 1;
 	position: fixed;
 	flex-direction: column;
 	flex-wrap: wrap;
 	background-color: rgba(0, 0, 0, 1);
-	z-index: 2000;
-	width: 80%;
-	height: 60lvh;
+	width: 90%;
+	height: auto;
 	color: white;
 	top: 20%;
-	margin: 20px;
-	padding: 10px;
-	text-align: center;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 2%;
 	text-justify: justify;
 	align-content: center;
 	justify-items: center;
 	justify-content: center;
 	text-align: justify;
 	z-index: 5000;
+	font-size: .6rem;
 }
 
 .cuerpo {
@@ -291,7 +288,7 @@ body {
 	display: flex;
 	position: relative;
 	float: right;
-	margin: 40px;
+	margin: 10px;
 	padding: 3px;
 	border: solid 1px;
 }
@@ -324,15 +321,7 @@ body {
 	align-content: center;
 	justify-items: center;
 	justify-content: center;
-}
-
-.contenidos .cont-parafo {	
-	justify-content: center;
-	justify-items: center;
-	align-items: center;
-	align-content: center;
-	object-position: center;
-	overflow: hidden;
+	z-index: 5000;
 }
 
 .cont-parafo {
@@ -347,7 +336,6 @@ body {
 	align-self: center;
 	justify-self: center;
 	overflow: auto;
-	z-index: 6000;
 }
 
 .cont-parafo p {

@@ -425,6 +425,7 @@ body {
 }
 
 .foot {
+	display: flex;
 	position: relative;
 	background-color: #303030;
 	width: 100%;

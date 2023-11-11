@@ -156,9 +156,9 @@ body {
 	border-radius: 2px;
 }
 
-main {
+.main {
 	position: relative;
-	top: -200px;
+	top: -50px;
 /*	border: 1px solid darkred;*/
 }
 
@@ -613,7 +613,7 @@ main {
 		 object-position: center;
 	}
 
-	main {
+	.main {
 		border: 1px solid black;
 		top: 0;
 	}

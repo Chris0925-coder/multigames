@@ -202,7 +202,12 @@ main {
 	background: linear-gradient( to top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.1) 100% );
 }
 
-.slide0 img {
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img,
+.img5 img,
+.img6 img {
 	 display: flex;
 	 position: relative;
 	 background-size: cover;
@@ -212,7 +217,7 @@ main {
 	 transition: transform 0.3s ease-in-out;
 	 width: 400px;
 	 height: 600px;
-	 max-width: 1200px;
+	 /*	 max-width: 1200px;*/
 }
 
 .slider {
@@ -567,7 +572,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-
+	
 	.slider {
 		display: flex;
 		position: relative;
@@ -589,12 +594,26 @@ main {
 		margin-top: 10px;
 	}
 
-	.slide0 img {
-		/*display: flex;
+	.slide0 {
 		position: relative;
-		background-size: contain;*/
-		width: 200px;
-/*		max-width: 400px;*/
-		height: 400px;
+		width: 300px;
+		border: 1px solid black;
+	}
+
+	.img1 img,
+	.img2 img,
+	.img3 img,
+	.img4 img,
+	.img5 img,
+	.img6 img  {
+		 display: flex;
+		 position: relative;
+		 background-size: cover;
+		 margin: 0 auto;
+		 padding: 0;
+		 object-fit: fill;
+		 transition: transform 0.3s ease-in-out;
+		 width: 300px;
+		 height: 600px;
 	}
 }

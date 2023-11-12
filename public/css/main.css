@@ -371,6 +371,10 @@ html {
 	margin: 0;
 }
 
+.gtv h4 {
+	text-align: center;
+}
+
 #gta {
 	display: flex;
 	position: relative;
@@ -384,6 +388,7 @@ html {
 	overflow: auto;
 	padding: 1em;
 	gap: 2em;
+	justify-content: center;
 }
 
 .gta5 {
@@ -393,14 +398,30 @@ html {
 	gap: .4em;
 /*	justify-content: center;*/
 	text-align: center;
+	list-style: none;
+	padding-left: auto;
+	width: 100%;
 /*	border: 1px solid black;*/
 }
 
 .gta5 li {
-	gap: .4em;
-	justify-content: space-between;
-	border: 1px solid black;
-	padding: .2em;
+	position: relative;
+/*	gap: 4em;*/
+/*	justify-content: stretch;*/
+	border: 1px solid #30303090;
+	padding: .5em;
+	width: 100%;
+/*	align-content: center;*/
+/*	padding-left: 0;*/
+}
+
+.gta5 li b {
+	display: flex;
+	position: relative;
+/*	left: 20;*/
+/*	border: 1px solid black;*/
+	width: auto;
+/*	bottom: 50%;*/
 }
 
 .anuncio {

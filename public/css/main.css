@@ -10,7 +10,7 @@
 html {
   font-family: 'Noto Sans', sans-serif;
   height: 100%;
-  overflow-x: hidden;
+/*  overflow-x: hidden;*/
 }
 
 /*body {
@@ -56,6 +56,7 @@ html {
 	background-size: 20px 20px;
 	background-position: 0 0,10px 10px;
 	overflow: hidden;
+/*	border: 1px solid black;*/
 }
 
 .hero:before {
@@ -212,11 +213,12 @@ html {
 	display: block;
 	position: absolute;
 /*	align-content: center;
-	justify-content: center;
-*/	margin: 40px auto 10px auto;
+	justify-content: center;*/	
+	margin: 40px auto 10px auto;
 	bottom: 15%;
 	width: 100%;
 	height: auto;
+/*	border: 1px solid black;*/
 /*	opacity: 0.9;*/
 }
 

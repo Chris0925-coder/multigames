@@ -13,18 +13,20 @@ html {
   overflow-x: hidden;
 }
 
-body {
+/*body {
 	width: 100%;
 	min-height: 100lvh;
 	overflow-x: hidden;
-}
+}*/
 
-.container {
-/*	border: 1px solid black;*/
-	padding: 10px 40px 0 40px;
-/*	margin: 40px;*/
-}
-/*
+/*.container {
+	display: contents;
+	width: 90%;
+	height: auto;
+	margin: 0 40px;
+	border: 1px solid black;
+}*/
+
 .primero {
 	display: flex;
 	position: relative;
@@ -36,7 +38,7 @@ body {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 40%;
-}*/
+}
 
 .hero {
 	display: grid;
@@ -77,12 +79,13 @@ body {
 .navbar {
 	display: flex;
 	position: relative;
-/*	text-align: center;*/
+	/*	text-align: center;*/
 	background: none;
 	width: 100%;
-	height: fit-content;
+	height: auto; 
 	justify-content: space-between;
 	color: white;
+	padding: .4em;
 /*	border: 1px solid white;*/
 }
 
@@ -90,13 +93,21 @@ body {
 	display: flex;
 	position: relative;
 	flex-direction: row;
-/*	margin: 0 auto;*/
 	font-weight: 900;
 	width: auto;
 	animation: mover-izq-der 3s 1;
 	animation-fill-mode: forwards;
 	color: palegoldenrod;
 /*	border: 1px solid black;*/
+	padding: .4em;
+	overflow: hidden;
+	align-items: center;
+}
+
+.primero-titulo h1 {
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
 }
 
 
@@ -112,23 +123,25 @@ body {
 .navbar-nav {
 	display: block;
 	position: relative;
-	width: auto;
-	height: auto;
+	margin: auto 0;
+/*	flex-direction: column;*/
 /*	border: 1px solid black;*/
 }
 
 .nav {
-	display: grid;
-/*	position: relative;*/
+	/*display: grid;
+	position: relative;
 	margin-left: auto;
 	grid-auto-flow: column;
 	grid-auto-columns: max-content;
-	/*width: 100%;
-	height: auto;*/
-/*	border: 1px solid black;*/
 	gap: 2em;
-	align-items: center;
-/*	justify-content: flex-end;*/
+	align-content: center;*/
+
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1em;
 }
 
 /*.nav-item a{
@@ -142,7 +155,7 @@ body {
 	color: white;
 	background: none;
 	text-decoration: none;
-/*	margin: auto;*/
+	margin: auto;
 	padding: 3px;
 }
 
@@ -155,7 +168,7 @@ body {
 	border: none;
 	text-decoration: none;
 /*	width: 100%;*/
-/*	gap: .1em;*/
+	gap: .4em;
 /*	padding-bottom: .8em;*/
 /*	border: 2px solid black;*/
 }
@@ -593,11 +606,10 @@ body {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
-	.nav {
+	.nav{
 		display: none;
-		gap: 1px;
 	}
 
 	.slider {

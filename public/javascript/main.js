@@ -30,6 +30,7 @@ function showSlides() {
     slideIndex++;
     if(slideIndex > img.length) {slideIndex = 1};
     img[slideIndex-1].style.display = "block";
+
     if (img[slideIndex-1] == img[1]) {
 			b2.style.opacity = "1";
 			b3.style.opacity = ".3";
@@ -110,22 +111,22 @@ next.addEventListener('click', () => {
 
 
 let contenido = document.querySelector('.contenidos');
-let plus = document.querySelector('.plusM');
+// let plus = document.querySelector('.plusM');
 let close = document.querySelector('.closeA');
 let closeB = document.querySelector('.closeB');
-let parr = document.querySelector('.parr');
-let summary = document.querySelector('summary');
-summary.addEventListener('click', () => {
-	parr.style.display = 'flex';
-})
-closeB.addEventListener('click', () => {
-	parr.style.display = 'none';
-});
+// let parr = document.querySelector('.parr');
+// let summary = document.querySelector('summary');
+// summary.addEventListener('click', () => {
+// 	parr.style.display = 'flex';
+// })
+// closeB.addEventListener('click', () => {
+// 	parr.style.display = 'none';
+// });
 
 
-plus.addEventListener('click', () => {
-	contenido.style.display = 'block';
-});
+// plus.addEventListener('click', () => {
+// 	contenido.style.display = 'block';
+// });
 
 
 close.addEventListener('click', () => {

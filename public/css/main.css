@@ -60,7 +60,13 @@ body {
 	max-height: 900px;
 	padding: 5px;
 	grid-template-rows: 100px 1fr;
-	background-image: linear-gradient(to right, #4e2de25c 0%, #4a00e08c 100%);
+/*	background-image: linear-gradient(to right, #4e2de25c 0%, #4a00e08c 100%);*/
+/*	background-color: #e5e5f7;*/
+	opacity: 0.9;
+	background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+	background-size: 20px 20px;
+	background-position: 0 0,10px 10px;
+	overflow: hidden;
 }
 
 .hero:before {
@@ -202,33 +208,26 @@ body {
 }
 
 .slide0 {
-	 display: flex; 
+	 display: block; 
 	 position: relative; 
 	 justify-content: center; 
 	 align-content: center; 
-	 text-align: center; 
-	 justify-content: center; 
-	 width: auto; 
-	 height: auto; 
+/*	 text-align: center; */
+/*	 justify-content: center; */
+	 width: 100%; 
+	 height: 600px;
+	 overflow: hidden;
+	 padding: 0 10%;
 	background: linear-gradient( to top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.1) 100% );
 }
 
-.img1 img,
-.img2 img,
-.img3 img,
-.img4 img,
-.img5 img,
-.img6 img {
-	 display: flex;
-	 position: relative;
-	 background-size: cover;
-	 margin: 0 auto;
-	 padding: 0;
+.slide0 img {
+	 display: block;
 	 object-fit: fill;
-	 transition: transform 0.3s ease-in-out;
-	 width: 600px;
-	 height: 600px;
-	 /*	 max-width: 1200px;*/
+	 transition: all 0.3s ease-in-out;
+	 width: 100%;
+	 height: 100%;
+	 z-index: -1;
 }
 
 .slider {
@@ -308,14 +307,23 @@ body {
 	margin: 0 auto;
 }
 
-.sumary {
-	color: white;
-	scale: 1;
-	font-size: .5rem;
-	cursor: pointer;
+/*summary {
+	display: flex;
+	position: relative;
 }
+*/
+/*summary {
+	display: flex;
+	position: absolute;
+	color: black;
+	background-color: rgba(0, 0, 0, 1.0);
+	font-size: .7rem; 
+	cursor: pointer;	
+	width: 100%;
+	height: 100%;
+}*/
 
-.parr {
+/*.parr {
 	position: fixed;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -334,7 +342,7 @@ body {
 	text-align: justify;
 	z-index: 5000;
 	font-size: .6rem;
-}
+}*/
 
 .cuerpo {
 	display: grid;
@@ -607,18 +615,15 @@ body {
 	.slide0 {
 		position: relative;
 		width: 300px;
+		height: auto;
 		border: 1px solid black;
 	}
-	.img1 img,
-	.img2 img,
-	.img3 img,
-	.img4 img,
-	.img5 img,
-	.img6 img  {
-		 width: 300px;
-		 height: 600px;
-		 justify-content: center;
-		 object-position: center;
+
+	.slide0 img {
+		 /*width: 300px;
+		 height: 600px;*/
+		/* justify-content: center;
+		 object-position: center;*/
 	}
 
 	.main {

@@ -209,3 +209,29 @@ slider1(b3, img3,img1,img2,img4,img5,img6);
 slider1(b4, img4,img2,img3,img1,img5,img6);
 slider1(b5, img5,img1,img3,img4,img2,img6);
 slider1(b6, img6,img1,img2,img4,img5,img3);
+
+
+let content = document.getElementsByClassName('you');
+let videos = document.getElementsByClassName('youvideos');
+let yt = document.querySelector('.yt');
+
+let contents = [content[3], content[2], content[1], content[0]];
+console.log(contents[3]);
+
+// contents.map();
+
+// let roots = contents.map(function () {
+  // return 
+	// let roots = 
+	// return roots.slice(3, 2, 1, 0);
+	
+// });
+// let roots = contents.slice(3, 0);
+// roots;
+// console.log(videos[3]);
+console.log(contents);
+yt.append(contents[0], contents[1], contents[2], contents[3]);
+// yt.appendChild(contents[0], contents[1]);
+// let array = contents.slice(3,2,1,0);
+// console.log(contents.slice(3,2,1,0));
+// videos = array.slice(3, 0);

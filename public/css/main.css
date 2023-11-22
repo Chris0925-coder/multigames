@@ -249,6 +249,7 @@ html {
 	width: 100%;
 	height: auto;
 /*	border: 1px solid black;*/
+/*	justify-content: center;*/
 /*	opacity: 0.9;*/
 }
 
@@ -343,16 +344,19 @@ html {
 	flex-direction: column;
 	position: absolute;	
 	font-size: .7rem;
-	top: 50%;
-	right: 0;
+	top: 110%;
+	right: -50%;
+	left: -50%;
 	width: 60%;
 	height: auto;
 	color: white;
 	padding: 3%;
+	justify-self: center;
 	text-align: justify;
 	z-index: 5000;
 	background-color: rgba(0, 0, 0, 0.6);
 	margin: 0 auto;
+/*	border: 1px solid white;*/
 }
 
 /*summary {

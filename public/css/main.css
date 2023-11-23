@@ -111,6 +111,7 @@ html {
 	width: auto;
 	height: auto; 
 	justify-content: space-between;
+	align-items: center;
 	color: white;
 	padding: .4em;
 	z-index: 6000;
@@ -127,7 +128,7 @@ html {
 	animation: mover-izq-der 3s 1;
 	animation-fill-mode: forwards;
 	color: #f5f5f5;
-	padding: .4em;
+	padding: .2em;
 	overflow: hidden;
 	align-items: center;
 }
@@ -151,12 +152,17 @@ html {
 }
 
 .navbar-nav {
+	display: flex;
+	position: relative;
 	/*display: block;
 	position: relative;
-	margin: auto 0;
-	border: 1px solid black;*/
-	padding: .4em;
+	margin: auto 0;*/
+/*	border: 1px solid black;*/
+	padding-left: .4em;
+/*	margin-left: .4em;*/
 	width: auto;
+	height: auto;
+	align-items: center;
 }
 
 .nav-items {
@@ -347,12 +353,12 @@ html {
 	top: 110%;
 	right: -50%;
 	left: -50%;
-	width: 60%;
+	width: 750px;
 	height: auto;
 	color: white;
 	padding: 3%;
 	justify-self: center;
-	text-align: justify;
+	text-align: justify-all;
 	z-index: 5000;
 	background-color: rgba(0, 0, 0, 0.6);
 	margin: 0 auto;
@@ -737,6 +743,7 @@ html {
 @media screen and (max-width: 768px) {
 
 	.hero {
+		height: 200lvh;
 /*		border: 1px solid darkred;*/
 	}
 
@@ -808,6 +815,10 @@ html {
 		grid-template-columns: auto auto;
 		height: 100%;
 /*		overflow: visible;*/
+	}
+
+	.imagestext {
+		width: 70%;
 	}
 
 	/*.youvideos {

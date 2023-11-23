@@ -62,8 +62,9 @@ html {
 /*	background-image: linear-gradient(to right, #4e2de25c 0%, #4a00e08c 100%);*/
 /*	background-color: #e5e5f7;*/
 	opacity: 0.9;
-	background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+/*	background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);*/
 	background-size: 20px 20px;
+	background-image: radial-gradient(#daa520e9 0.5px, transparent 0.5px), radial-gradient(#daa520e9 0.5px, #daa520a1 1.5px);	
 	background-position: 0 0,10px 10px;
 	overflow: hidden;
 /*	background-image: url('../img/logomultigames.png');*/
@@ -77,11 +78,6 @@ html {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	/*ffd700c1
-	daa520c1*/
-/*	background-image: url('../img/logomultigames.png');*/
-/*	background-image: url('../img/fer2.jfif');*/
-/*	background-image: linear-gradient(360deg, #6e2de24c 0%, #4a00e040 100%), url('../img/logomultigames.png');*/
 	background-image: linear-gradient(360deg, #daa520e9 0%, #eee8aac2 100%), url('../img/logomultigames.png');
 	background-size: 100% 100%;
 	background-position: center;
@@ -268,19 +264,21 @@ html {
 	position: relative; 
 	justify-content: center; 
 	align-content: center; 
-	max-width: 1200px; 
+/*	min-width: 900px; */
+	width: 100%;
 	height:400px;
-	padding: 0 10%;
+	padding: 0 20%;
 /*	border: 1px solid red;*/
 	margin: 0 auto;
 	background: linear-gradient( to top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.1) 100% );
+	background-size: cover;
 }
 
 .slide0 img {
 	 display: block;
 	 object-fit: fill;
 	 transition: all 0.3s ease-in-out;
-	 width: 100%;
+	 width: 600px;
 	 height: 100%;
 	 z-index: -1;
 }
@@ -743,8 +741,7 @@ html {
 @media screen and (max-width: 768px) {
 
 	.hero {
-		height: 200lvh;
-/*		border: 1px solid darkred;*/
+		height: 250lvh;
 	}
 
 	.hero-logo {

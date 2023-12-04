@@ -632,6 +632,7 @@ html {
 	justify-items: center;
 	justify-content: center;
 	z-index: 5000;
+	overflow: scroll;
 }
 
 .cont-parafo {
@@ -731,10 +732,10 @@ html {
 
 .bi-instagram {
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  	-webkit-background-clip: text;
+  -webkit-background-clip: text;
           /* Also define standard property for compatibility */
-  	background-clip: text;
-  	-webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .bi-youtube {

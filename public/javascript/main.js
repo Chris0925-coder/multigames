@@ -111,7 +111,7 @@ next.addEventListener('click', () => {
 
 
 let contenido = document.querySelector('.contenidos');
-// let plus = document.querySelector('.plusM');
+let plus = document.querySelector('.plusM');
 let close = document.querySelector('.closeA');
 let closeB = document.querySelector('.closeB');
 // let parr = document.querySelector('.parr');
@@ -124,9 +124,9 @@ let closeB = document.querySelector('.closeB');
 // });
 
 
-// plus.addEventListener('click', () => {
-// 	contenido.style.display = 'block';
-// });
+plus.addEventListener('click', () => {
+	contenido.style.display = 'block';
+});
 
 
 close.addEventListener('click', () => {

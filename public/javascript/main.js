@@ -16,11 +16,12 @@ let img3 = document.querySelector('.img3');
 let img4 = document.querySelector('.img4');
 let img5 = document.querySelector('.img5');
 let img6 = document.querySelector('.img6');
-console.log(images);
-console.log(img);
+// console.log(images);
+// console.log(img);
 // console.log();
 
-let slideIndex = 0
+let slideIndex = 0;
+let slideIndexB = 0;
 
 function showSlides() {
 	let i;
@@ -75,38 +76,40 @@ function showSlides() {
 			b6.style.opacity = ".3";
 		}
 };
-
+// console.log(img.length);
 let sTime = setInterval(showSlides, 8000);
 
 prev.addEventListener('click', () => {
+	let indicator = document.querySelector(".indicators");
+	// console.log(indicator);
 	clearInterval(sTime);
 		for (i = 0; i < img.length; i++) {
 		img[i].style.display = "none";
+		indicator.children[i].style.opacity = ".3";
 		}
-	slideIndex--;
+	slideIndexB--;
 
-	if (slideIndex <= 0) {
-		slideIndex = 5;
-	}
-	img[slideIndex-1].style.display = "block";
+	if (slideIndexB < 0) {slideIndexB = 5}
+	img[slideIndexB].style.display = "block";
+	indicator.children[slideIndexB].style.opacity = "1";
 
 });
 
 next.addEventListener('click', () => {
+	let indicator = document.querySelector(".indicators");
 	clearInterval(sTime);
 	if (true) {
-		slideIndex++;
+		slideIndexB++;
 
 		for (i = 0; i < img.length; i++) {
 		img[i].style.display = "none";
+		indicator.children[i].style.opacity = ".3";
 		}
 	}
 
-	if(slideIndex > img.length) {
-    	slideIndex = 1
-
-    }
-	img[slideIndex-1].style.display = "block";
+	if(slideIndexB > img.length) {slideIndexB = 1}
+	img[slideIndexB-1].style.display = "block";
+	indicator.children[slideIndexB-1].style.opacity = "1";
 });
 
 
@@ -138,7 +141,7 @@ close.addEventListener('click', () => {
 
 // NEWCODE
 
-console.log(img1);
+// console.log(img1);
 function slider1(a , b, c, d ,f , g, h){
 
 	a.addEventListener('click', () => {
@@ -216,7 +219,7 @@ let videos = document.getElementsByClassName('youvideos');
 let yt = document.querySelector('.yt');
 
 let contents = [content[3], content[2], content[1], content[0]];
-console.log(contents[3]);
+// console.log(contents[3]);
 
 // contents.map();
 
@@ -229,7 +232,7 @@ console.log(contents[3]);
 // let roots = contents.slice(3, 0);
 // roots;
 // console.log(videos[3]);
-console.log(contents);
+// console.log(contents);
 yt.append(contents[0], contents[1], contents[2], contents[3]);
 // yt.appendChild(contents[0], contents[1]);
 // let array = contents.slice(3,2,1,0);

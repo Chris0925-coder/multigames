@@ -3,25 +3,34 @@ const images = document.getElementsByName("carusel");
 const prev = document.getElementById("btn0");
 const next = document.getElementById("btn1");
 
-let b1 = document.querySelector('.b0');
-let b2 = document.querySelector(".b1");
-let b3 = document.querySelector(".b2");
-let b4 = document.querySelector('.b3');
-let b5 = document.querySelector(".b4");
-let b6 = document.querySelector(".b5");
+const b1 = document.querySelector('.b0');
+const b2 = document.querySelector(".b1");
+const b3 = document.querySelector(".b2");
+const b4 = document.querySelector('.b3');
+const b5 = document.querySelector(".b4");
+const b6 = document.querySelector(".b5");
 // console.log(b1);
-let img1 = document.querySelector('.img1');
-let img2 = document.querySelector('.img2');
-let img3 = document.querySelector('.img3');
-let img4 = document.querySelector('.img4');
-let img5 = document.querySelector('.img5');
-let img6 = document.querySelector('.img6');
+const img1 = document.querySelector('.img1');
+const img2 = document.querySelector('.img2');
+const img3 = document.querySelector('.img3');
+const img4 = document.querySelector('.img4');
+const img5 = document.querySelector('.img5');
+const img6 = document.querySelector('.img6');
 // console.log(images);
 // console.log(img);
 // console.log();
 
 let slideIndex = 0;
 let slideIndexB = 0;
+
+function slideButtoms(a, b, c, d, e, f) {
+		a.style.opacity = "1";
+		b.style.opacity = ".3";
+		c.style.opacity = ".3";
+		d.style.opacity = ".3";
+		e.style.opacity = ".3";
+		f.style.opacity = ".3";
+}
 
 function showSlides() {
 	let i;
@@ -33,47 +42,23 @@ function showSlides() {
     img[slideIndex-1].style.display = "block";
 
     if (img[slideIndex-1] == img[1]) {
-			b2.style.opacity = "1";
-			b3.style.opacity = ".3";
-			b1.style.opacity = ".3";
-			b4.style.opacity = ".3";
-			b5.style.opacity = ".3";
-			b6.style.opacity = ".3";
+    	// let botones = b3, b1, b4, b5, b6;
+    	slideButtoms(b2, b3, b1, b4, b5, b6);
 		} else if (img[slideIndex-1] == img[2]) {
-			b3.style.opacity = "1";
-			b2.style.opacity = ".3";
-			b1.style.opacity = ".3";
-			b4.style.opacity = ".3";
-			b5.style.opacity = ".3";
-			b6.style.opacity = ".3";
+			// let botones = b2, b1, b4, b5, b6;
+    	slideButtoms(b3, b2, b1, b4, b5, b6);
 		} else if (img[slideIndex-1] == img[3]) {
-			b4.style.opacity = "1";
-			b2.style.opacity = ".3";
-			b1.style.opacity = ".3";
-			b3.style.opacity = ".3";
-			b5.style.opacity = ".3";
-			b6.style.opacity = ".3";
+			// let botones = b2, b1, b3, b5, b6;
+    	slideButtoms(b4, b2, b1, b3, b5, b6);
 		} else if (img[slideIndex-1] == img[4]) {
-			b5.style.opacity = "1";
-			b2.style.opacity = ".3";
-			b1.style.opacity = ".3";
-			b4.style.opacity = ".3";
-			b3.style.opacity = ".3";
-			b6.style.opacity = ".3";
+			// let botones = b2, b1, b3, b4, b6;
+    	slideButtoms(b5, b2, b1, b3, b4, b6);
 		} else if (img[slideIndex-1] == img[5]) {
-			b6.style.opacity = "1";
-			b2.style.opacity = ".3";
-			b1.style.opacity = ".3";
-			b4.style.opacity = ".3";
-			b5.style.opacity = ".3";
-			b3.style.opacity = ".3";
+			// let botones = b2, b1, b3, b5, b4;
+    	slideButtoms(b6, b2, b1, b3, b5, b4);
 		} else {
-			b1.style.opacity = "1";
-			b3.style.opacity = ".3";
-			b2.style.opacity = ".3";
-			b4.style.opacity = ".3";
-			b5.style.opacity = ".3";
-			b6.style.opacity = ".3";
+			// let botones = b2, b4, b3, b5, b6;
+    	slideButtoms(b1, b2, b4, b3, b5, b6);
 		}
 };
 // console.log(img.length);
@@ -113,10 +98,10 @@ next.addEventListener('click', () => {
 });
 
 
-let contenido = document.querySelector('.contenidos');
-let plus = document.querySelector('.plusM');
-let close = document.querySelector('.closeA');
-let closeB = document.querySelector('.closeB');
+const contenido = document.querySelector('.contenidos');
+const plus = document.querySelector('.plusM');
+const close = document.querySelector('.closeA');
+const closeB = document.querySelector('.closeB');
 // let parr = document.querySelector('.parr');
 // let summary = document.querySelector('summary');
 // summary.addEventListener('click', () => {
@@ -136,9 +121,6 @@ close.addEventListener('click', () => {
 	contenido.style.display = 'none';
 });
 
-
-
-
 // NEWCODE
 
 // console.log(img1);
@@ -154,53 +136,17 @@ function slider1(a , b, c, d ,f , g, h){
 		h.style.display = 'none';
 
 		if (a == b2) {
-			b2.style.opacity = "1";
-			b3.style.opacity = ".3";
-			b1.style.opacity = ".3";
-			b4.style.opacity = ".3";
-			b5.style.opacity = ".3";
-			b6.style.opacity = ".3";
-
-			// a.classList.toggle("active");
+			slideButtoms(b2, b3, b1, b4, b5, b6);
 		} else if (a == b3) {
-			b3.style.opacity = "1";
-			b2.style.opacity = ".3";
-			b1.style.opacity = ".3";
-			b4.style.opacity = ".3";
-			b5.style.opacity = ".3";
-			b6.style.opacity = ".3";
-			// a.style.opacity = ".1";
+			slideButtoms(b3, b2, b1, b4, b5, b6);
 		} else if (a == b4) {
-			b4.style.opacity = "1";
-			b2.style.opacity = ".3";
-			b1.style.opacity = ".3";
-			b3.style.opacity = ".3";
-			b5.style.opacity = ".3";
-			b6.style.opacity = ".3";
-			// a.style.opacity = ".1";
+			slideButtoms(b4, b2, b1, b3, b5, b6);
 		} else if (a == b5) {
-			b5.style.opacity = "1";
-			b2.style.opacity = ".3";
-			b1.style.opacity = ".3";
-			b4.style.opacity = ".3";
-			b3.style.opacity = ".3";
-			b6.style.opacity = ".3";
-			// a.style.opacity = ".1";
+			slideButtoms(b5, b3, b1, b4, b2, b6);
 		} else if (a == b6) {
-			b6.style.opacity = "1";
-			b2.style.opacity = ".3";
-			b1.style.opacity = ".3";
-			b4.style.opacity = ".3";
-			b5.style.opacity = ".3";
-			b3.style.opacity = ".3";
-			// a.style.opacity = ".1";
+			slideButtoms(b6, b3, b1, b4, b5, b2);
 		} else {
-			b1.style.opacity = "1";
-			b3.style.opacity = ".3";
-			b2.style.opacity = ".3";
-			b4.style.opacity = ".3";
-			b5.style.opacity = ".3";
-			b6.style.opacity = ".3";
+			slideButtoms(b1, b3, b2, b4, b5, b6);
 		}
 	});
 	

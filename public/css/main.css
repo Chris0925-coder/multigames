@@ -743,6 +743,50 @@ header {
 	color: #fff;
 }
 
+.amazon__articles {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: flex-end;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+}
+
+.ps5 {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+/*	right: 0;*/
+/*	z-index: -1;*/
+	max-width: 500px;
+	height: auto;
+
+}
+
+.ps5 img {
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.logo__amazon {
+	display: block;
+	position: absolute;
+	background-image: url('../img/amazon.png');
+	background-position: bottom;
+	backdrop-filter: blur(10px, black);
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+/*	bottom: 0;*/
+	right: 0;
+	z-index: 1000;
+/*	border: 1px solid green;*/
+}
+
 @media screen and (max-width: 768px) {
 
 	.hero {
@@ -842,14 +886,14 @@ header {
 		align-items: center;
 }*/
 
-	@keyframes mover-izq-der {
-	from {
-		transform: translateX(100%);
+		@keyframes mover-izq-der {
+		from {
+			transform: translateX(100%);
+		}
+		to {
+			transform: translateX(5px);
+		}
 	}
-	to {
-		transform: translateX(5px);
-	}
-}
 
 }
 

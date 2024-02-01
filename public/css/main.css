@@ -775,7 +775,7 @@ header {
 	position: absolute;
 	background-image: url('../img/amazon.png');
 	background-position: bottom;
-	backdrop-filter: blur(10px, black);
+	backdrop-filter: blur(10px, dar);
 
 	background-size: cover;
 	background-repeat: no-repeat;

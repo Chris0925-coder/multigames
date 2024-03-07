@@ -788,6 +788,14 @@ header {
 	z-index: 1000;
 /*	border: 1px solid green;*/
 }
+.bestgames__content {
+	width: 50%;
+/*	border: 1px solid green;*/
+}
+
+.bestgames__items{
+	list-style: decimal;
+}
 
 .bestgames__item {
 	margin:0 0 20px 0;
@@ -795,6 +803,7 @@ header {
 
 .bestgames__item p {
 	font-size: .7rem;
+/*	width: 50%;*/
 }
 
 @media screen and (max-width: 768px) {

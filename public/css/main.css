@@ -28,6 +28,7 @@ header {
 	/*display: flex;
 	position: relative;*/
 	margin: 0 80px;
+	padding: 50px 0;
 /*	border: 1px solid white;*/
 	width: 90%;
 	height: fit-content;
@@ -786,6 +787,14 @@ header {
 	right: 0;
 	z-index: 1000;
 /*	border: 1px solid green;*/
+}
+
+.bestgames__item {
+	margin:0 0 20px 0;
+}
+
+.bestgames__item p {
+	font-size: .7rem;
 }
 
 @media screen and (max-width: 768px) {
